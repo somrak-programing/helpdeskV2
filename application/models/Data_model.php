@@ -49,5 +49,22 @@ class Data_model extends CI_Model {
                 return FALSE;
         }
 
+        public function update_job()
+        {
+                //Set ว/ด/ป เวลา ให้เป็นของประเทศไทย
+                //date_default_timezone_set('Asia/Bangkok');
+                //index.php
+                //https://www.codexworld.com/how-to/change-timezone-in-codeigniter/
+                $data = array(
+                    'case_status' => $this->input->post('case_status'),
+                    'tech_id' => $this->input->post('tech_id'),
+                    'tech_name' => $this->input->post('tech_name'),
+                    'case_update_log' => $this->input->post('case_update_log'),
+                    'case_update' => date('Y-m-d H:i:s')
+                );
+                $this->db->where('id', $this->input->post('id'));
+                $query=$this->db->update('tbl_case',$data);
+        }
+
 
 }

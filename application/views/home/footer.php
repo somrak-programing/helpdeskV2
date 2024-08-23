@@ -1,5 +1,5 @@
   <!--start  footer -->
-    <div class="container-fluid">
+  <div class="container-fluid">
       <div class="row">
         <div class="col-12 col-sm-12 col-md-12">
           <p align="center" class="myfooter"> helpdesk system by devbanban.com @2020 <br>
@@ -15,9 +15,9 @@
 </html>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="<?php echo base_url(); ?>asset/bt4/js/jquery-3.3.1.slim.min.js"></script>
+<!-- <script src="<?php echo base_url(); ?>asset/bt4/js/jquery-3.3.1.slim.min.js"></script> ตัดออกเพราะชนกันกับ datatable -->
 <script src="<?php echo base_url(); ?>asset/bt4/js/popper.min.js"></script>
-<script src="<?php echo base_url(); ?>asset/bt4/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url(); ?>asset/bt4/js/bootstrap.min.js"></script> 
 
 
 <script type="text/javascript">

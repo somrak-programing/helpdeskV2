@@ -21,6 +21,9 @@
               <a class="nav-link" href="<?= site_url(''); ?>">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
+              <a class="nav-link" href="<?= site_url('form/allcase'); ?>">ติดตามงาน</a>
+            </li>
+            <li class="nav-item active">
               <a class="nav-link" href="<?= site_url('login'); ?>">Login</a>
             </li>
 

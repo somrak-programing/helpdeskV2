@@ -1,4 +1,7 @@
 <?php
+
+	// Set Date Thailand
+	date_default_timezone_set('Asia/Bangkok');
 /**
  * CodeIgniter
  *

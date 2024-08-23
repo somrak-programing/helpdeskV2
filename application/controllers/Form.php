@@ -97,4 +97,12 @@ class Form extends CI_Controller
 		$this->load->view('home/form_detail', $data);
 		$this->load->view('home/footer');
 	}
+
+	public function allcase()
+	{
+		$data['query']=$this->data_model->all();
+		$this->load->view('home/header');
+		$this->load->view('home/list_case_view' ,$data);
+		$this->load->view('home/footer');
+	}
 }

@@ -1,9 +1,9 @@
 <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> 2.4.13
+      <b>Helpdesk System by devbanban.com 2020</b>
     </div>
-    <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE</a>.</strong> All rights
-    reserved.
+    <strong>
+      <a href="https://devbanban.com/?p=2867" target="_blank">คอร์สออนไลน์สอน CodeIgniter เข้าเรียนได้ตลอดชีพ คลิก </a>.</strong>
   </footer>
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->
@@ -52,7 +52,7 @@ $('#example2').DataTable({
   swal("", "บันทึกข้อมูลเรียบร้อยแล้ว", "success");
    <?php endif; ?>
 
-   <?php if ($this->session->flashdata('warning')): ?>
+   <?php if ($this->session->flashdata('check_duplicate')): ?>
   swal("", "ข้อมูลซ้ำ!!!", "warning");
    <?php endif; ?>
 
@@ -64,9 +64,3 @@ $('#example2').DataTable({
   swal("", "ลบข้อมูลเรียบร้อยแล้ว", "success");
    <?php endif; ?>
 </script>
-
-
-
-
-
-

@@ -18,7 +18,6 @@ class Login extends CI_Controller {
 
 	public function authen()
 	{
-
 		if($this->input->post('admin_email')==''){
 			redirect('login','refresh');
 		}else{
@@ -40,7 +39,7 @@ class Login extends CI_Controller {
 				$admin_status = $_SESSION['admin_status'];
 				if($admin_status==1){
 					//echo 'r u admin';
-					redirect('admin','refresh');
+					redirect('jobs','refresh');
 				}else{
 					//u not admin
 					$this->session->set_flashdata('login_error', TRUE);
